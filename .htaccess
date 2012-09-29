@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule images/(.*)\.jpg$ sniffer/images/$1.jpg.php [L]
+RewriteRule images/(.*)\.jpeg$ sniffer/images/$1.jpeg.php [L]
+RewriteRule images/(.*)\.png$ sniffer/images/$1.png.php [L]
+RewriteRule images/(.*)\.gif$ sniffer/images/$1.gif.php [L]
